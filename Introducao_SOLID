@@ -1,0 +1,42 @@
+Introducao
+
+SOLID e m acronimo dos cinco primeiros principios da programacao orientada a objetos e design de codigo identificados por Robert C. MArtion (ou Uncle Bob) nos meados do ano 2000, ele nao inventou os cinco principios ele apenas os identificou e os reunio. O acronimo SOLID representa bem o que os principios se propem e bem representativo seja um codigo solido nao seja um codigo sensivel ele tem que ser um codigo resistente
+
+Seja facil de se manter(muito importante), adaptar e se ajustar as alteracoes de scopo;
+Seja TESTAVEL e de facil ENTENDIMENTO;
+Seja extensivel para alteracoes com o menor ESFORCO necessario;
+Que forneca o maximo de REAPROVEITAMENTO;
+Que permaneca o maximo de tempo possivel em utilizacao.
+
+Engenharia de software nao e igual a engenharia civil, uma vez que o arquiteto e o engenhiro chefgaram a uma conclusao que o predio var ter um hall de entrada e o elevador vai ficar a direita, nao pode chegar uma alteracao de escopo e dizer que o hall vai ser na lateral e o elevador vai ficar na esquerda, vai ter que demolir o predio e construir tudo de novo.
+
+O codigo e tao sensivel que qualquer alteracao quebra, ou seja o codigo e fragil, ao contrario do que o solid propoem que ele tem que ser facil de se ajustar e se adaptar, e ele tem que ser testavel, uma vez que voce mecheu em alguma coisa o teste vai te dizer se alguma coisa quebrou, previnindo efeitos colaterais e regrecoes.
+
+Utilizando os principios SOLID e possivel evitar problemas muito comuns:
+ - Dificuldade na testabilidade/criacao de testes de unidade;
+ - Codigo macarronico, sem estrutura ou padrao; (comeca e termina de um jeito diferente, voce nao consegue prever como ele funciona)
+ - Dificuldade de isolar funcionalidades; (voce nao consegue mexer sem afetar uma outra parte, prque temosum forte acoplamento)
+ - Duplicacao de codigo, uma alteracao precisa ser feita em N pontos; (em uma funcao muito complicada, voce copia e cola apenas mudando nome e parametros...)
+ - Fragilidade, o codigo quebra facilmente em varios pontos apos alguma alteracao.
+
+Como trabalhanmos em equipe, e varias pessoas participam desse codigo, e e por isso que todas as pessoas deveriam usar e se preocupa com os principios do SOLID, pra que em uma alteracao/manutencao nao quebre gere efeitos indesejaveis em outras partes do codigo.
+
+Bom apos essa visao sobre oque e o SOLID pra que que ele serve oque que ele resolve vamos enteder alguns de seus principios e ver como ele se aplica
+
+
+SRP - Single Responsability Principle (Principio de Responsabilidade Unica)
+	E o primeiro e mais importante princio porque se voce nao o respeitar, porque sem ele o outros principios nao fazem sentido algum e provavelemtne voce nao vai conseguir aplicar o resto. E muito simples de ser aplicado basta que sejamos responsaveis ao escrever o codigo. O SRP se a aplica a classes, metodos, arquivos. Vou ter muito mais arquivos, muito mais linha de codigo; mas tudo bem isso nao e problema, o problema e ter um codigo dificil de manter e quabrar ou ter as dificuldades que ja forma listadas.
+
+	Consequencia do nao uso do SRP
+		1 - Tempo. Tempo acho que seria o maior efeito negativo de nao usarmos o SRP, pois gastamo uma enorme quantidade de tempo lendo um metodo para decifrasmos a sua logica, e na maioria das vezes nao precisamos saber de 90%.
+		2 - Baixo REUSO de codigo, gerando uma grande repeticao de codigo e mais uma...gastaremos TEMPO quando for preciso alterar uma logica.
+		3 - Baixa TESTABILIDADE. Fica praticamente imposivel testar um codigo que nao segue o SRP, pois temos um forte acoplamento que inviabiliza o teste de unidades pois temos um forte acoplamento com responsabilidades entrelacadas
+
+OCP - Open Closed Principle (Principio Aberto/Fechado)
+	Entidades de software (classes, modulos, funcoes, etc..) devem estar abertas para extensao, mas fechadas para modificacoes.
+	A definicao desse principio e simples porem a sua aplicacao nao e tao trivial assim, e exige uma maior atencao na hora de escrever os metodos, e nao e tao simples de aplicar em um codigo pronto.
+
+LSP - Liskov Substiturion Principle
+	Uma classe base deve poder ser substituida pela sua classe derivada.
+	Se nada como um pato, voa como um pato e faz quack como um pato, porem precisa de baterias para funcionar, provavelmente voce possui um problema de abstracao.
+	Se a classe PatinhoDeBorrachaEletronico que e uma extensao e Pato, precisa de pilhas pra fazer quack logo eu nao posso substituir um pato por um patinho de borracha eletrico
