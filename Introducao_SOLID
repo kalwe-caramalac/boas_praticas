@@ -1,6 +1,6 @@
 Introducao
 
-SOLID e m acronimo dos cinco primeiros principios da programacao orientada a objetos e design de codigo identificados por Robert C. MArtion (ou Uncle Bob) nos meados do ano 2000, ele nao inventou os cinco principios ele apenas os identificou e os reunio. O acronimo SOLID representa bem o que os principios se propem e bem representativo seja um codigo solido nao seja um codigo sensivel ele tem que ser um codigo resistente
+SOLID e um acronimo dos cinco primeiros principios da programacao orientada a objetos e design de codigo identificados por Robert C. Martin (ou Uncle Bob) nos meados do ano 2000, ele nao inventou os cinco principios ele apenas os identificou e os reunio. O acronimo SOLID representa bem o que os principios se propem e bem representativo seja um codigo solido nao seja um codigo sensivel ele tem que ser um codigo resistente.
 
 Seja facil de se manter(muito importante), adaptar e se ajustar as alteracoes de scopo;
 Seja TESTAVEL e de facil ENTENDIMENTO;
@@ -8,7 +8,7 @@ Seja extensivel para alteracoes com o menor ESFORCO necessario;
 Que forneca o maximo de REAPROVEITAMENTO;
 Que permaneca o maximo de tempo possivel em utilizacao.
 
-Engenharia de software nao e igual a engenharia civil, uma vez que o arquiteto e o engenhiro chefgaram a uma conclusao que o predio var ter um hall de entrada e o elevador vai ficar a direita, nao pode chegar uma alteracao de escopo e dizer que o hall vai ser na lateral e o elevador vai ficar na esquerda, vai ter que demolir o predio e construir tudo de novo.
+Engenharia de software nao e igual a engenharia civil, uma vez que o arquiteto e o engenhiro chegaram a uma conclusao que o predio var ter um hall de entrada e o elevador vai ficar a direita, nao pode chegar uma alteracao de escopo e dizer que o hall agora vai ser na lateral e o elevador vai ficar na esquerda, vai ter que demolir o predio e construir tudo de novo.
 
 O codigo e tao sensivel que qualquer alteracao quebra, ou seja o codigo e fragil, ao contrario do que o solid propoem que ele tem que ser facil de se ajustar e se adaptar, e ele tem que ser testavel, uma vez que voce mecheu em alguma coisa o teste vai te dizer se alguma coisa quebrou, previnindo efeitos colaterais e regrecoes.
 
@@ -28,7 +28,7 @@ SRP - Single Responsability Principle (Principio de Responsabilidade Unica)
 	E o primeiro e mais importante princio porque se voce nao o respeitar, porque sem ele o outros principios nao fazem sentido algum e provavelemtne voce nao vai conseguir aplicar o resto. E muito simples de ser aplicado basta que sejamos responsaveis ao escrever o codigo. O SRP se a aplica a classes, metodos, arquivos. Vou ter muito mais arquivos, muito mais linha de codigo; mas tudo bem isso nao e problema, o problema e ter um codigo dificil de manter e quabrar ou ter as dificuldades que ja forma listadas.
 
 	Consequencia do nao uso do SRP
-		1 - Tempo. Tempo acho que seria o maior efeito negativo de nao usarmos o SRP, pois gastamo uma enorme quantidade de tempo lendo um metodo para decifrasmos a sua logica, e na maioria das vezes nao precisamos saber de 90%.
+		1 - Tempo. Tempo acho que seria o maior efeito negativo de nao usarmos o SRP, pois gastamo uma enorme quantidade de tempo lendo um metodo para decifrasmos a sua logica, e na maioria das vezes nao precisamos sabe naquele momento.
 		2 - Baixo REUSO de codigo, gerando uma grande repeticao de codigo e mais uma...gastaremos TEMPO quando for preciso alterar uma logica.
 		3 - Baixa TESTABILIDADE. Fica praticamente imposivel testar um codigo que nao segue o SRP, pois temos um forte acoplamento que inviabiliza o teste de unidades pois temos um forte acoplamento com responsabilidades entrelacadas
 
