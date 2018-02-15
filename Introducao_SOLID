@@ -21,16 +21,16 @@ Utilizando os principios SOLID e possivel evitar problemas muito comuns:
 
 Como trabalhanmos em equipe, e varias pessoas participam desse codigo, e e por isso que todas as pessoas deveriam usar e se preocupa com os principios do SOLID, pra que em uma alteracao/manutencao nao quebre gere efeitos indesejaveis em outras partes do codigo.
 
-Bom apos essa visao sobre oque e o SOLID pra que que ele serve oque que ele resolve vamos enteder alguns de seus principios e ver como ele se aplica
+Bom apos essa visao sobre oque e o SOLID pra que que ele serve oque que ele resolve vamos enteder alguns de seus principios e ver como ele se aplica.
 
 
 SRP - Single Responsability Principle (Principio de Responsabilidade Unica)
-	E o primeiro e mais importante princio porque se voce nao o respeitar, porque sem ele o outros principios nao fazem sentido algum e provavelemtne voce nao vai conseguir aplicar o resto. E muito simples de ser aplicado basta que sejamos responsaveis ao escrever o codigo. O SRP se a aplica a classes, metodos, arquivos. Vou ter muito mais arquivos, muito mais linha de codigo; mas tudo bem isso nao e problema, o problema e ter um codigo dificil de manter e quabrar ou ter as dificuldades que ja forma listadas.
+	E o primeiro e mais importante princio porque se voce nao o respeitar, porque sem ele o outros principios nao fazem sentido algum e provavelemtne voce nao vai conseguir aplicar o resto. E muito simples de ser aplicado basta que sejamos responsaveis ao escrever o codigo. O SRP se a aplica a classes, metodos, arquivos. Ah mas eu vou ter muito mais arquivos, muito mais linha de codigo; tudo bem isso nao e problema, o problema e ter um codigo dificil de manter, quabrar(fragil) ou ter as dificuldades que ja forma listadas.
 
 	Consequencia do nao uso do SRP
 		1 - Tempo. Tempo acho que seria o maior efeito negativo de nao usarmos o SRP, pois gastamo uma enorme quantidade de tempo lendo um metodo para decifrasmos a sua logica, e na maioria das vezes nao precisamos sabe naquele momento.
 		2 - Baixo REUSO de codigo, gerando uma grande repeticao de codigo e mais uma...gastaremos TEMPO quando for preciso alterar uma logica.
-		3 - Baixa TESTABILIDADE. Fica praticamente imposivel testar um codigo que nao segue o SRP, pois temos um forte acoplamento que inviabiliza o teste de unidades pois temos um forte acoplamento com responsabilidades entrelacadas
+		3 - Baixa TESTABILIDADE. Fica praticamente imposivel testar um codigo que nao segue o SRP, pois temos um forte acoplamento que inviabiliza o teste de unidades pois temos um forte acoplamento com responsabilidades entrelacadas.
 
 OCP - Open Closed Principle (Principio Aberto/Fechado)
 	Entidades de software (classes, modulos, funcoes, etc..) devem estar abertas para extensao, mas fechadas para modificacoes.
@@ -39,4 +39,4 @@ OCP - Open Closed Principle (Principio Aberto/Fechado)
 LSP - Liskov Substiturion Principle
 	Uma classe base deve poder ser substituida pela sua classe derivada.
 	Se nada como um pato, voa como um pato e faz quack como um pato, porem precisa de baterias para funcionar, provavelmente voce possui um problema de abstracao.
-	Se a classe PatinhoDeBorrachaEletronico que e uma extensao e Pato, precisa de pilhas pra fazer quack logo eu nao posso substituir um pato por um patinho de borracha eletrico
+	Se a classe PatinhoDeBorrachaEletronico que e uma extensao e Pato, precisa de pilhas pra fazer quack logo eu nao posso substituir um pato por um patinho de borracha eletrico.
